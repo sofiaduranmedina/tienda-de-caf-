@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#3b141c;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  background:#3b141c;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 40px;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#f5a623;
+}
+
+.nav-links .active{
+  font-weight:bold;
+}
+
+/* Íconos */
+.nav-links i{
+  font-size:18px;
+}
+
+/* HAMBURGUESA */
+.hamburger{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+  color:white;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:120px 40px 60px;
+  min-height:100vh;
+}
+
+.hero-text{
+  max-width:500px;
+}
+
+.hero-text h1{
+  font-size:55px;
+  color:#f5a623;
+  margin-bottom:15px;
+}
+
+.hero-text h2{
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.hero-text p{
+  font-size:15px;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+}
+
+.btn{
+  background:#f5a623;
+  color:white;
+  padding:10px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#d4881c;
+}
+
+.btn-outline{
+  background:transparent;
+  border:2px solid #f5a623;
+}
+
+.btn-outline:hover{
+  background:#f5a623;
+}
+
+/* Imagen */
+.hero-img img{
+  width:400px;
+  border-radius:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-img img{
+    width:300px;
+    margin-top:30px;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#3b141c;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hamburger{
+    display:block;
+  }
+}
