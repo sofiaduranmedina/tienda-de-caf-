@@ -10,7 +10,6 @@ body{
   color:white;
 }
 
-/* NAVBAR */
 nav{
   background:#3b141c;
   display:flex;
@@ -44,20 +43,15 @@ nav{
   transition:0.3s;
 }
 
-.nav-links a:hover{
-  color:#f5a623;
-}
 
 .nav-links .active{
   font-weight:bold;
 }
 
-/* Íconos */
 .nav-links i{
   font-size:18px;
 }
 
-/* HAMBURGUESA */
 .hamburger{
   display:none;
   font-size:22px;
@@ -65,7 +59,6 @@ nav{
   color:white;
 }
 
-/* HERO */
 .hero{
   display:flex;
   justify-content:space-between;
@@ -123,13 +116,11 @@ nav{
   background:#f5a623;
 }
 
-/* Imagen */
 .hero-img img{
   width:400px;
   border-radius:20px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
 
   .hero{
