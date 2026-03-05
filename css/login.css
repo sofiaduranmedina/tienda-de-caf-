@@ -1,0 +1,185 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #ffffff;
+}
+
+nav{
+  background: #3b141c; 
+  padding: 50px;
+  font-size:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: #ffffff;
+  font-size:50px;
+  font-family: 'Miniver', sans-serif
+}
+
+.logo span{
+  font-family: 'Miniver', sans-serif
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a.active{
+  font-weight:bold;
+}
+
+.login-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:90vh;
+align-items:center;
+padding:40px 80px;
+}
+
+.login-card{
+background:white;
+padding:40px;
+border-radius:15px;
+width:400px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-icon{
+font-size:40px;
+text-align:center;
+margin-bottom:10px;
+}
+
+.login-card h2{
+text-align:center;
+margin-bottom:25px;
+color:#4a0d13;
+}
+
+.login-card label{
+display:block;
+margin-top:10px;
+margin-bottom:5px;
+font-size:14px;
+}
+
+.login-card input{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:10px;
+font-size:13px;
+}
+
+.forgot{
+color:#ff8c00;
+text-decoration:none;
+}
+
+.login-btn{
+width:100%;
+margin-top:15px;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#5a0f16;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.divider{
+text-align:center;
+margin:20px 0;
+position:relative;
+}
+
+.divider span{
+background:white;
+padding:0 10px;
+color:#555;
+}
+
+.divider::before{
+content:"";
+position:absolute;
+top:50%;
+left:0;
+width:100%;
+height:1px;
+background:#ccc;
+z-index:-1;
+}
+
+.social-login{
+display:flex;
+gap:10px;
+}
+
+.social-login button{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+background:white;
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+cursor:pointer;
+}
+
+.social-login img{
+width:20px;
+}
+
+.register{
+margin-top:15px;
+text-align:center;
+font-size:14px;
+}
+
+.register a{
+color:#ff8c00;
+text-decoration:none;
+}
+
+.login-image{
+text-align:center;
+}
+
+.login-image h1{
+font-family: 'Miniver', cursive;
+color:#ff8c00;
+font-size:40px;
+margin-bottom:10px;
+}
+
+.login-image img{
+width:350px;
+}

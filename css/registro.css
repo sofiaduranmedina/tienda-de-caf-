@@ -1,0 +1,142 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #ffffff;
+}
+
+nav{
+  background: #3b141c; 
+  padding: 50px;
+  font-size:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: #ffffff;
+  font-size:50px;
+  font-family: 'Miniver', sans-serif
+}
+
+.logo span{
+  font-family: 'Miniver', sans-serif
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a.active{
+  font-weight:bold;
+}
+
+.registro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px 80px;
+    align-items: start;
+}
+
+.registro-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.user-icon {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registro-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a0d13;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.grid-nombre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.terminos {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.terminos a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+.btn-registrar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5a0f16;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-registrar:hover {
+    background: #7a1822;
+}
+
+.seguridad {
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+.registro-imagen {
+    text-align: center;
+}
+
+.registro-imagen h1 {
+    font-family: 'Miniver', cursive;
+    color: #ff8c00;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.registro-imagen img {
+    width: 300px;
+}

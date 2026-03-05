@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito de Compra</title>
+  <link rel="stylesheet" href="./css/carrito.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      ☕ <span>Coffe</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contacto.html" class="active">Contactenos</a></li>
+      <li><a href="carrito.html">🛒</a></li>
+      <li><a href="login.html">👤</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="carrito-column">
+      <h2>🛒 Tu carrito</h2>
+      <p class="subtitle">Revisa tus productos antes de finalizar la compra</p>
+
+      <div class="carrito-vacio-card">
+        <div class="icono-carrito">🛒</div>
+        <h3>Tu carrito está vacío</h3>
+        <p>¡Descubre productos increíbles y comienza tu compra!</p>
+        <button class="btn-explorar">🔍 Explorar Productos</button>
+      </div>
+    </section>
+
+    <section class="resumen-column">
+      <div class="resumen-pedido-card">
+        <h3>📦 Resumen del Pedido</h3>
+
+        <div class="totales">
+          <div><span>Subtotal</span> <span class="precio">$ 0</span></div>
+          <div><span>Envío</span> <span class="envio-gratis">Gratis</span></div>
+          <div class="total"><strong>Total</strong> <strong>$ 0</strong></div>
+        </div>
+
+        <hr/>
+
+        <form class="form-pedido">
+          <fieldset>
+            <legend>◆Información del Pedido</legend>
+
+            <label for="direccion">Dirección completa</label>
+            <input type="text" id="direccion" name="direccion" placeholder="" required />
+
+            <div class="fila-ciudad-cp">
+              <div class="campo-pequeno">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="" required />
+              </div>
+
+              <div class="campo-pequeno">
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" placeholder="" required />
+              </div>
+            </div>
+
+            <label for="metodo-pago">Método de pago</label>
+            <input type="text" id="metodo-pago" name="metodo-pago" placeholder="" required />
+          </fieldset>
+
+          <button type="submit" class="btn-finalizar">✔️ Finalizar compra</button>
+        </form>
+
+        <ul class="beneficios">
+          <li>🛡 Compra segura y protegida</li>
+          <li>📦 Envío gratis en compras &gt; $100.000</li>
+          <li>👤 Atención al cliente 24/7</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

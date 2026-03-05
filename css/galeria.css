@@ -42,6 +42,9 @@ nav{
   transition: 0.3s;
 }
 
+.nav-links a.active{
+  font-weight:bold;
+}
 
 .galeria{
   padding: 60px 10%;
@@ -49,17 +52,18 @@ nav{
 }
 
 .titulo{
-  font-size: 45px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 60px;
   position: relative;
   display: inline-block;
+  color:#252525;
 }
 
 .titulo::after{
   content: "";
-  width: 200px;
-  height: 6px;
+  width: 180px;
+  height: 5px;
   background: #f3961c;
   position: absolute;
   left: 50%;
@@ -124,7 +128,7 @@ nav{
   }
 
   .titulo::after{
-    width:120px;
+    width:147px;
     height:4px;
     bottom:-6px;
   }

@@ -1,0 +1,374 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #ffffff;
+}
+
+nav{
+  background: #3b141c ; 
+  padding: 50px;
+  font-size:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: #ffffff;
+  font-size:50px;
+  font-family: 'Miniver', sans-serif;
+}
+
+.logo span{
+  font-family: 'Miniver', sans-serif;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a.active{
+  font-weight:bold;
+}
+
+main{
+  max-width:1100px;
+  margin:80px auto;
+  display:flex;
+  gap:40px;
+}
+
+.carrito-column{
+  flex:1;
+}
+
+.carrito-column h2{
+  font-size:50px;
+  font-weight:700;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.subtitle{
+  color:#252525;
+  font-size:18px;
+  margin-bottom:20px;
+  font-weight: 800;
+  text-align:center;
+}
+
+.carrito-vacio-card{
+  background:#ffffff;
+  border-radius:10px;
+  border:1px solid #cccccc;
+  padding:90px;
+  text-align:center;
+  width:670px;
+  margin:90px 40px 40px 40px;
+  box-shadow:0px 6px 10px rgba(0,0,0,0.2);
+}
+
+.icono-carrito{
+  font-size:90px;
+  color:#cccccc;
+  margin-bottom:15px;
+}
+
+.carrito-vacio-card h3{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.carrito-vacio-card p{
+  color:#252525;
+  font-size:17px;
+  margin-bottom:50px;
+  font-weight: 700;
+}
+
+.btn-explorar{
+  background:#3b141c;
+  color:#ffffff;
+  border:none;
+  padding:12px 22px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.resumen-column{
+  width:360px;
+}
+
+.resumen-pedido-card{
+  background:#ffffff;
+  border:1px solid #cccccc;
+  border-radius:10px;
+  width: 520px; 
+  padding: 60px;
+  min-height: 750px;
+}
+
+.resumen-pedido-card h3{
+  font-size:25px;
+  margin-bottom:15px;
+}
+
+.totales div{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:15px;
+  font-size:17px;
+  color: #cccccc;
+}
+
+.envio-gratis{
+  color:#22c55e;
+  font-weight:bold;
+}
+
+.precio {
+  color: #22c55e;  
+  font-weight: bold; 
+}
+
+.total strong:last-child {
+  color: #22c55e; 
+  font-weight: bold;
+}
+
+hr{
+  border:none;
+  border-top:2px solid #cccccc;
+  margin:10px 0;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;         
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;    
+  border: 1px solid #d4d4d4;  
+  border-radius: 6px;          
+  padding: 12px 15px;           
+  margin-top: 15px;              
+}
+
+.form-pedido fieldset{
+  border:none;
+  margin-top:15px;
+}
+
+.form-pedido legend{
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.form-pedido label{
+  font-size:16px;
+  display:block;
+  margin-bottom:5px;
+  color: #cccccc;
+}
+
+.form-pedido input{
+  width:100%;
+  padding:9px;
+  border:1px solid #cccccc;
+  border-radius:5px;
+  margin-bottom:12px;
+}
+
+.form-pedido input[type="text"] {
+  width: 100%;
+  padding: 14px;       
+  font-size: 16px;       
+  border: 1px solid #d4d4d4; 
+  border-radius: 6px;
+  margin-bottom: 16px;   
+  color: #252525;        
+}
+
+.fila-ciudad-cp{
+  display:flex;
+  gap:10px;
+}
+
+.campo-pequeno input[type="text"] {
+  width: 150px;         
+  padding: 10px;        
+  font-size: 14px;      
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.campo-pequeno{
+  flex:1;
+}
+
+.btn-finalizar{
+  width:250px;
+  background:#3b141c;
+  color:#ffffff;
+  border:none;
+  padding:11px;
+  border-radius:6px;
+  margin-top:8px;
+  cursor:pointer;
+  font-size:14px;
+  display: block;
+  margin: 0 auto;
+}
+
+.beneficios{
+  margin-top:15px;
+  list-style:none;
+  font-size:17px;
+  color:#252525;
+}
+
+.beneficios li{
+  margin-bottom:7px;
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 40px 20px;
+    gap: 30px;
+  }
+
+  .carrito-column {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .carrito-column h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .carrito-vacio-card {
+    width: 100%;
+    padding: 60px 30px;
+    margin: 60px auto 40px auto;
+  }
+
+  .icono-carrito {
+    font-size: 70px;
+    margin-bottom: 15px;
+  }
+
+  .carrito-vacio-card h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .carrito-vacio-card p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .btn-explorar {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .resumen-column {
+    width: 100%;
+  }
+
+  .resumen-pedido-card {
+    width: 100%;
+    padding: 40px 30px;
+    min-height: auto;
+  }
+
+  .resumen-pedido-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .totales div {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .total {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .form-pedido input[type="text"] {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .campo-pequeno input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-finalizar {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .beneficios {
+    font-size: 15px;
+  }
+
+  .beneficios li {
+    margin-bottom: 10px;
+  }
+}
