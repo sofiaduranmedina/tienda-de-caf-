@@ -11,20 +11,21 @@ body{
 
 nav{
   background: #3b141c; 
-  padding: 15px 8%;
+  padding: 50px;
+  font-size:20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo{
-  color: white;
-  font-size: 22px;
-  font-family: 'Miniver', cursive;
+  color: #ffffff;
+  font-size:50px;
+  font-family: 'Miniver', sans-serif
 }
 
 .logo span{
-  font-family: 'Miniver', cursive;
+  font-family: 'Miniver', sans-serif
 }
 
 .nav-links{
@@ -36,7 +37,7 @@ nav{
 
 .nav-links a{
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -59,7 +60,7 @@ nav{
   content: "";
   width: 200px;
   height: 6px;
-  background: orange;
+  background: #f3961c;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -75,6 +76,7 @@ nav{
 .img-container{
   overflow: hidden;
   border-radius: 14px;
+  box-shadow: 0px 12px 0px #ffffff;
 }
 
 .img-container img{
@@ -88,18 +90,51 @@ nav{
   transform: scale(1.05);
 }
 
-@media (max-width: 500px){
+@media screen and (max-width: 768px) {
+
   nav{
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    padding:15px 20px;
+    gap:10px;
   }
 
   .nav-links{
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+  }
+
+  .logo{
+    font-size:35px;
+    text-align: center;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .galeria{
+    padding:40px 5%;
+    text-align: center;
+  }
+
+  .titulo{
+    font-size:32px;
+  }
+
+  .titulo::after{
+    width:120px;
+    height:4px;
+    bottom:-6px;
   }
 
   .grid-galeria{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    gap:50px;
+  }
+
+  .img-container img{
+    height:250px;
   }
 }
