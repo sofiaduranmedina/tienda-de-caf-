@@ -28,63 +28,72 @@
 </nav>
 
 
-<section class="login-container">
+<main class="login">
 
-    <div class="login-card">
+    <div class="login-container">
 
-        <div class="user-icon">👤</div>
-        <h2>Bienvenido de vuelta</h2>
+        <div class="login-card">
 
-        <form>
+            <h2>Bienvenido de vuelta</h2>
 
-            <label>Correo electrónico</label>
-            <input type="email" placeholder="">
-
-            <label>Contraseña</label>
-            <input type="password" placeholder="">
-
-            <div class="options">
-                <label>
-                    <input type="checkbox">
-                    Recordarme
-                </label>
-
-                <a href="#" class="forgot">¿Olvidaste la contraseña?</a>
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
             </div>
 
-            <button class="login-btn">Iniciar sesión</button>
+            <label>Correo electronico</label>
+            <input type="email">
 
-        </form>
+            <label>Contraseña</label>
+            <input type="password">
 
-        <div class="divider">
-            <span>Continua con</span>
+            <div class="recordar">
+                <div>
+                    <input type="checkbox"> Recordarme
+                </div>
+
+                <a href="#">¿Olvidaste la contraseña?</a>
+            </div>
+
+            <button class="btn-login">Iniciar sesion</button>
+
+            <div class="divider">
+                <span>Continua con</span>
+            </div>
+
+            <div class="social">
+
+                <button class="google">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png">
+                    Google
+                </button>
+
+                <button class="facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png">
+                    Facebook
+                </button>
+
+            </div>
+
+            <p class="registro">
+                ¿No tienes una cuenta? 
+                <a href="./registros.html">Registrate aqui</a>
+            </p>
+
+            <p class="seguridad">
+                🔒 Tus datos estan protegidos con encriptacion nivel empresarial
+            </p>
+
         </div>
 
-        <div class="social-login">
-            <button class="google">
-                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
-                Google
-            </button>
+        <div class="coffee-img">
 
-            <button class="facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-                Facebook
-            </button>
+            <h3>El mejor cafe</h3>
+
+            <img src="./img/coffee-hero-section.png" alt="cafe">
+
         </div>
-
-        <p class="register">
-            ¿No tienes una cuenta?
-            <a href="#">Regístrate aquí</a>
-        </p>
 
     </div>
 
-    <div class="login-image">
-        <h1>El mejor cafe</h1>
-        <img src="./img/coffee-hero-section.png">
-    </div>
-
-</section>
-
+</main>
 </body>
-</html>

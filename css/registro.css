@@ -21,11 +21,11 @@ nav{
 .logo{
   color: #ffffff;
   font-size:50px;
-  font-family: 'Miniver', sans-serif
+  font-family: 'Miniver', sans-serif;
 }
 
 .logo span{
-  font-family: 'Miniver', sans-serif
+  font-family: 'Miniver', sans-serif;
 }
 
 .nav-links{
@@ -131,7 +131,7 @@ input {
 }
 
 .registro-imagen h1 {
-    font-family: 'Miniver', cursive;
+    font-family: 'Miniver', sans-serif;
     color: #ff8c00;
     font-size: 38px;
     margin-bottom: 20px;
