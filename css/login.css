@@ -333,7 +333,7 @@ nav{
   }
 
   .login-container{
-    flex-direction: column;  /* tarjetas una debajo de otra */
+    flex-direction: column;  
     gap: 40px;
   }
 
@@ -348,10 +348,10 @@ nav{
   }
 
   .coffee-img h3{
-    font-size: 32px;       /* letra más pequeña para móviles */
-    margin-left: 0;        /* quitar el margen negativo */
-    width: 100%;           /* ocupar todo el ancho disponible */
-    text-align: center;    /* centrar texto */
+    font-size: 32px;      
+    margin-left: 0;        
+    width: 100%;           
+    text-align: center;    
   }
 
   .coffee-img img{
