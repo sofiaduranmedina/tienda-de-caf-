@@ -1,107 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+
     <link rel="stylesheet" href="./css/menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
-    <div class="logo">
-      ☕ <span>Coffe</span>
+<nav>
+  <div class="logo">
+    ☕ <span>Coffe</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="galeria.html">Galeria</a></li>
+    <li><a href="contacto.html">Contactenos</a></li>
+
+    <li>
+      <a href="carrito.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </li>
+
+    <li><a href="login.html">👤</a></li>
+  </ul>
+</nav>
+
+<section id="menu" class="menu-section">
+  <h1>MENU</h1>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="./img/hot-beverages.png" alt="bebidas-calientes">
+      <div class="card-content">
+        <h2>Bebidas calientes</h2>
+        <p>Amplia variedad de cafés calientes al vapor para sentir fresco y ligero su paladar</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
+        </div>
+      </div>
     </div>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="contacto.html" class="active">Contactenos</a></li>
-      <li><a href="carrito.html">🛒</a></li>
-      <li><a href="login.html">👤</a></li> 
-    </ul>
-    </nav>
-
-    <section id="menu" class="menu-section">
-        <h1>MENU</h1>
-
-        <div class="menu-grid">
-
-            <div class="menu-card">
-                <img src="./img/hot-beverages.png" alt="bebidas-calientes">
-                <div class="card-content">
-                    <h2>Bebidas-calientes</h2>
-                    <p>Amplia variedad de cafes calientes al vapor para sentir fresco y ligero su paladar</p>
-                    <div class="card-buttons">
-                        <button class="order-btn">Comprar</button>
-                        <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="./img/cold-beverages.png" alt="Bebidas-frias">
-                <div class="card-content">
-                    <h2>Bebidas-frias</h2>
-                    <p>Cremoso y espumoso cafe frio para hacerte sentir mas fresco</p>
-                    <div class="card-buttons">
-                        <button class="order-btn">Comprar</button>
-                        <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="./img/refreshment.png" alt="Refrescos">
-                <div class="card-content">
-                    <h2>Refrescos</h2>
-                    <p>Bebidas refrescantes con frutas e hielo para hacerte sentir renovado</p>
-                    <div class="card-buttons">
-                    <button class="order-btn">Comprar</button>
-                    <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="./img/special-combo.png" alt="Combos-especiales">
-                <div class="card-content">
-                    <h2>Combos especiales</h2>
-                    <p>La mejor convinación entre sabor calidad y precio</p>
-                    <div class="card-buttons">
-                    <button class="order-btn">Comprar</button>
-                    <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="./img/burger-frenchfries.png" alt="Comodas-rapidas">
-                <div class="card-content">
-                    <h2>Comidas rapidas</h2>
-                    <p>Amplia variedad de comidas rapidas para degustar de la mejor forma a su paladar</p>
-                    <div class="card-buttons">
-                    <button class="order-btn">Comprar</button>
-                    <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="./img/desserts.png" alt="Postres">
-                <div class="card-content">
-                    <h2>Postres</h2>
-                    <p>Divercidad de postres con frutas y otros imgredientes que alteran tu gusto</p>
-                    <div class="card-buttons">
-                    <button class="order-btn">Comprar</button>
-                    <button class="order-btn">Detalles</button>
-                    </div>
-                </div>
-            </div>
+    <div class="menu-card">
+      <img src="./img/cold-beverages.png" alt="Bebidas-frias">
+      <div class="card-content">
+        <h2>Bebidas frías</h2>
+        <p>Cremoso y espumoso café frío para hacerte sentir más fresco</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
         </div>
+      </div>
+    </div>
 
-    </section>
+    <div class="menu-card">
+      <img src="./img/refreshment.png" alt="Refrescos">
+      <div class="card-content">
+        <h2>Refrescos</h2>
+        <p>Bebidas refrescantes con frutas e hielo para hacerte sentir renovado</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="./img/special-combo.png" alt="Combos-especiales">
+      <div class="card-content">
+        <h2>Combos especiales</h2>
+        <p>La mejor combinación entre sabor, calidad y precio</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="./img/burger-frenchfries.png" alt="Comidas-rapidas">
+      <div class="card-content">
+        <h2>Comidas rápidas</h2>
+        <p>Amplia variedad de comidas rápidas para degustar de la mejor forma</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="./img/desserts.png" alt="Postres">
+      <div class="card-content">
+        <h2>Postres</h2>
+        <p>Diversidad de postres con frutas y otros ingredientes deliciosos</p>
+        <div class="card-buttons">
+          <button class="order-btn">Comprar</button>
+          <button class="order-btn">Detalles</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="toast" class="toast">Producto agregado</div>
+
+<script src="./java/menu.js"></script>
+
 </body>
 </html>
